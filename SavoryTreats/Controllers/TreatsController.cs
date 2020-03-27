@@ -37,8 +37,8 @@ namespace SavoryTreats.Controllers
     public ActionResult Details(int id)
     {
       var thisTreat = _db.Treats
-          .Include(treat => treat.Items)
-          .ThenInclude(join => join.Item)
+          .Include(treat => treat.Flavors)
+          .ThenInclude(join => join.Flavor)
           .FirstOrDefault(treat => treat.TreatId == id);
       return View(thisTreat);
     }

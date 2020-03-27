@@ -1,0 +1,12 @@
+body,
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: black;
+  background-image: linear-gradient(silver, cyan, lavender, black);
+  text-align: center;
+  font-family: courier;
+  margin-top: 50px;
+}
